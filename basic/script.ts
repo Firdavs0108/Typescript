@@ -45,7 +45,7 @@ const colors: string[] = ['red', 'black', 'white']
 
 //object
 
-const logCar = ( car: {name: string, year: number}) => {
+const logCar = ( car: {name: string, year?: number}): string => {
     return `This is ${car.name} and created at ${car.year}` 
 
 }
