@@ -1,5 +1,11 @@
 
 
+//  Type, interfaces//////////////////////////////////////////////////
+
+
+
+
+
 //object
 
 // const rentCar = ( car: {name: string, year?: number}): string => {
