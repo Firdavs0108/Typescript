@@ -43,4 +43,22 @@ const num : [number,string,number] = [1,'2', 2]
 
 console.log(num);
 
+
+
+
+//  Generics
+
+interface ICar {
+    name: string;
+    color: string
+}
+
+function loggerTime <T>(data: T): T {
+    console.log(new Date());
+    return data
+}
+
+loggerTime<number>(9)
+loggerTime<string>('Firdavs') 
+
  
