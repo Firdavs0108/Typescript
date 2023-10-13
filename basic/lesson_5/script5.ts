@@ -62,3 +62,4 @@ loggerTime<number>(9)
 loggerTime<string>('Firdavs') 
 
  
+
