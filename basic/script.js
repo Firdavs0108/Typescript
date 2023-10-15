@@ -1,9 +1,10 @@
+"use strict";
 // const fullName = 'Firdavs'
 // console.log(fullName);
 // const surnameMn: string = 'Nazarov'
 // console.log(surnameMn);
 //array
-var colors = ['red', 'black', 'white'];
+const colors = ['red', 'black', 'white'];
 //any
 // let smth: any = 1
 // console.log(smth);
@@ -23,7 +24,7 @@ var colors = ['red', 'black', 'white'];
 // arr.map((arr:number) => arr.toFixed )
 // console.log(arr);
 //object
-var logCar = function (car) {
-    return "This is ".concat(car.name, " and created at ").concat(car.year);
+const logCar = (car) => {
+    return `This is ${car.name} and created at ${car.year}`;
 };
 console.log(logCar({ name: 'BMW', year: 2001 }));

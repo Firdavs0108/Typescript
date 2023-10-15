@@ -22,23 +22,89 @@
 
 // TYPE ALIASES
 
-type Employee = {
-    readonly id: number;
-    name: string;
-    retire: (date: Date)=> void
-}
+// type Employee = {
+//     readonly id: number;
+//     name: string;
+//     retire: (date: Date)=> void
+// }
 
 
-let employee: Employee = {
-    id: 1,
-    name: 'Fredrick',
-    retire: (date: Date)=>{
-        console.log(date);
+// let employee: Employee = {
+//     id: 1,
+//     name: 'Fredrick',
+//     retire: (date: Date)=>{
+//         console.log(date);
         
-    }
+//     }
 
-}
+// }
 
-console.log(employee);
+// console.log(employee);
+
+
+
+
+// UNION TYPES
+
+// function kgtoLbs (weight: number | string) : number {
+//     // Narrowing
+//     if (typeof weight === 'number')
+//         return weight * 2.9
+//     else
+//         return parseInt(weight) * 3.3
+// }
+ 
+
+// console.log(kgtoLbs('100'));
+
+
+
+
+ // INTERSECTION TYPES
+
+//  type Draggable = {
+//     drag: () =>  void
+//  };
+
+//  type Resizable = {
+//     resize: () => void
+//  };
+
+//  type UIWidget = Draggable & Resizable;
+
+// let texBox: UIWidget = {
+//     drag: () => {},
+//     resize: () => {}
+// }
+
+
+// LITERAL TYPES
+
+// Literal  (exact, specific)
+
+// type Quantity = 50 | 100;
+// let quantity: Quantity = 100;
+
+// type Metric = 'cm' | 'inch'
+
+// let meter: Metric = 'inch'
+
+
+// NULLABLE TYPES
+
+// function greet (name: string | null| undefined) {
+//     if(name)
+//         console.log(name.toUpperCase());
+//     else
+//         console.log('Salom');    
+// }
+
+
+// console.log(greet(null));
+
+
+
+// OPTIONAL CHAINING
+
 
 

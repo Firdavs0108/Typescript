@@ -1,3 +1,4 @@
+"use strict";
 // Literal type
 //  type actionType = 'show' | 'hide';
 //  function logger(action: actionType): boolean {
@@ -21,9 +22,15 @@ var Decision;
     Decision[Decision["yes"] = 1] = "yes";
     Decision["no"] = "no";
 })(Decision || (Decision = {}));
-var uzbIndex = Dictionary.uzb;
-var uzbK = Dictionary[uzbIndex];
+const uzbIndex = Dictionary.uzb;
+const uzbK = Dictionary[uzbIndex];
 console.log(uzbK);
 // Tuples = Array
-var num = [1, '2', 2];
+const num = [1, '2', 2];
 console.log(num);
+function loggerTime(data) {
+    console.log(new Date());
+    return data;
+}
+loggerTime(9);
+loggerTime('Firdavs');
